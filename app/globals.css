@@ -73,3 +73,36 @@ body{
   .nav-links{display:none}
   .container{padding:16px}
 }
+/* Mission / Vision */
+.mission-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:start;margin:48px 0}
+.mission-card, .vision-card, .core-values{background:#fff;padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.core-values .values-row{display:flex;gap:18px;align-items:center;justify-content:space-around;margin-top:12px}
+.core-values img{width:56px;height:56px;object-fit:contain}
+.value-text{text-align:center;margin-top:8px;font-weight:600;color:#111}
+
+/* FAQ */
+.faq h3{margin-bottom:18px;font-size:22px}
+.faq-list{display:flex;gap:22px}
+.accordion{width:100%;max-width:620px;background:#f9fafc;border-radius:10px;padding:8px}
+.acc-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px;border:none;background:transparent;cursor:pointer;font-size:17px}
+.acc-a{padding:12px 14px;background:#fff;border-radius:8px;margin-top:8px;color:#222}
+
+/* Testimonials */
+.testimonials{margin:48px 0}
+.test-grid{display:flex;gap:18px}
+.test-card{background:#f9fafc;padding:22px;border-radius:12px;width:100%;max-width:380px;position:relative}
+.quote-mark{font-size:60px;color:#022c6b;line-height:1;margin-bottom:-20px}
+.quote{font-size:16px;color:#111;line-height:1.5}
+.author{display:block;margin-top:16px;font-weight:600;color:#444}
+
+/* Desktop adjustments */
+@media(min-width:1100px){
+  .mission-grid{grid-template-columns:1fr 1fr 1fr}
+  .faq-list{flex-direction:column}
+  .test-grid{flex-direction:row}
+}
+@media(max-width:900px){
+  .mission-grid{grid-template-columns:1fr}
+  .faq-list{flex-direction:column}
+  .test-grid{flex-direction:column}
+}

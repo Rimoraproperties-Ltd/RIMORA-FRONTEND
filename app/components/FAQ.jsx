@@ -1,4 +1,5 @@
 // app/components/FAQ.jsx
+"use client";
 import { useState } from "react";
 
 const questions = [
@@ -45,7 +46,11 @@ function Accordion({ q, a }) {
         <span>{q}</span>
         <span className="acc-icon">{open ? "−" : "+"}</span>
       </button>
-      {open && <div className="acc-a"><p>{a}</p></div>}
+      {open && (
+        <div className="acc-a">
+          <p>{a}</p>
+        </div>
+      )}
     </div>
   );
 }
